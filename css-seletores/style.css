@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    font: normal 16px 'Courier New', sans-serif;
+    background-color: aliceblue;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+#principal {
+/*  para referenciar o id colocado no html, usamos # no css  */
+    color: midnightblue;
+    text-align: center;
+}
+
+
+.subtitulo {
+    /*  para referenciar uma class, usamos um . no css*/
+    background-color: blanchedalmond;
+}
+.especial {
+    text-align: center;
+}
+
+/*         HTML     CSS         */
+/*          id   =   #          */
+/*        class  =   .          */

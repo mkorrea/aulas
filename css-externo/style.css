@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* @charset serve para que o arquivo tenha compatibilidade com acentuação */
+body {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+h1 {
+    color: blueviolet;
+}
+p {
+    text-align: justify;
+}

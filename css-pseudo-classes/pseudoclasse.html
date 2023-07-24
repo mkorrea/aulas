@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div {
+            background-color: grey;
+            text-align: center;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        div:hover {
+/*  para criar uma pseudo classe, usamos dois pontos:  */
+/*  o comando "hover" permite que o estilo só seja aplicado ao passar o mouse por cima de determinado elemento  */
+            background-color: blue;
+        }
+
+        div:active {
+            background-color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <!-- div é apenas a criação de um espaço novo -->
+    <div>02</div>
+    <div>03</div>
+</body>
+</html>

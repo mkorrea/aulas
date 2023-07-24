@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e pseudo-classes</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {  
+/*  transforma todos os links que já foram visitados na cor marrom  */
+            color: brown;
+        }
+
+        a:active {
+/*  faz com que altere o conteúdo que está sendo clicado */
+            color: aqua;
+        }
+
+        a:hover {
+            text-decoration:  underline;
+        }
+
+a::after {
+    content: '[link]';
+    color: grey;
+}
+a::before {
+    content: 'teste de texto   ';
+    background-color: aliceblue;
+}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.youtube.com">Vá para o youtube</a></li>
+        <li><a href="https://facebook.com">Vá para o facebook</a></li>
+    </ul>
+</body>
+</html>

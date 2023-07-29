@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+         #container {
+            background: aqua url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            width: 97vw;
+            height: 97vh;
+            
+            position: relative;
+         }
+
+
+         #conteudo {
+            background: purple url(imagens/target001.png);
+            background-size: 100% 100%;
+            opacity: 95%;
+
+            width: 300px;
+            height: 200px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+                /* desse jeito, o canto superior esquerdo do #conteudo que ficou centralizado */
+            
+            transform: translate(-50%, -50%);
+                /* transform nos da a possibilidade de mudar e movimentar uma caixa */
+                /* translate permite movimentar o bloco, esquerda, direita, cima, baixo
+                    é usado dois valores (x, y) */
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <article id="container">
+            <section id="conteudo">
+            </section>
+        </article>
+    </main>
+</body>
+</html>

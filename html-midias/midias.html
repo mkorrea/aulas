@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1><code>Midias</code></h1>
+    
+    
+    <h1>Reproduzindo Audios</h1>
+    <p>Colocar um aúdio dentro do site</p>
+    <audio src="audios/music-lawrence.mp3" controls></audio>  <!-- primeiro método, cria uma reprodutor de som no site-->
+    
+<!--    'controls' faz com que o reprodutor apareça no site 
+    'loop' faz o audio ficar repetindo quando chega ao fim    -->
+    
+    <audio preload="metadata" controls loop>  <!--preload=
+        "auto" = o audio vai carregar assim que a pessoa entra no site, deixando o site mais pesado
+        "metadata" = o audio carrega quando a pessoa clica nele-->
+        <source src="audios/music-lawrence.mp3" type="audio/mpeg">  <!--type do mp3 é "mpeg"-->
+        <source src="audios/music-lawrence.wav" type="audio/wav">  <!--poderia colocar vários tipos de arquivos do mesmo audio (wav é pesado e nao recomendado)--> 
+        <p>Infelizmente seu navegador não suporta o arquivo</p>  <!-- info para caso nenhum dos arquivos carreguem-->
+        <a href="audios/music-lawrence.mp3">Clique aqui para baixar!</a>
+    </audio>
+    
+    
+    <h1>Inserindo Vídeos</h1>
+    <h2>vídeo hospedado no meu próprio servidor</h2>
+    
+    <video src="videos/video-teste.mp4" width="500" controls></video>
+    <!-- ou, para colocar mais opções de compatibilidade com o video: -->
+    <video controls width="500" poster="imagens/Tanjiro.jpg">  <!-- comando "poster" serve para adicionar uma thumbnail-->
+        <source src="videos/video-teste.mp4" type="video/mp4">
+        <source src="videos/video-teste.m4v" type="video/m4v">
+        <!-- etc -->
+    </video>
+    
+    <h2>Vídeo hospedado externamente</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4z3Mi-cSvUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- colocar video do youtube/vimeo, abre o video > compartilhar > incorporar > copiar o codigo aqui -->
+
+
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em diferentes dispositivos ou zoom do navegador</p>
+    
+    <picture>  <!-- essa tag se parece com 'img', mas ela permite criar várias sources. Assim, quando a janela for menor do que a imagem, ele vai substituir por uma menor-->
+        <source media="(max-width: 750px)" srcset="imagens/imagens-dinamicas/foto-p.png">  <!-- neste caso, tamanho máximo = 750px, pq a imagem tem 700, e se usa 50px a mais pra evitar a barra de rolagem
+        No "srcset", colocamos o diretório da foto menor-->
+        <source media="(max-width: 1050px)" srcset="imagens/imagens-dinamicas/foto-m.png">
+        <img src="imagens/imagens-dinamicas/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+</body>    
+</html>

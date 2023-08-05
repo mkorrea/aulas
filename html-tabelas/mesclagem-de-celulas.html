@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meclagem de Celulas</h1>
+
+    <table>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td colspan="2">d</td>
+<!--        <td>e</td>  para uma celula ocupar duas colunas, é necessario apagar a celula do lado e na outra, acrescentar o comando   " colspan="(numero de colunas)" "   ou  rowspan para o numero de linhas                     -->
+            <td rowspan="2">f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>h</td>
+<!--        <td>i</td>              -->
+        </tr>
+    </table>
+</body>
+</html>

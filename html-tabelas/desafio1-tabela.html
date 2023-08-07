@@ -19,40 +19,83 @@
             border: 2px solid black;
             text-align: center;
         }
+        .a {
+            background-color: blue;
+        }
+        .b {
+            background-color: darkgreen;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+        /* ao adicionar a tabela em uma div, e colocar "overflow", a pagina deixa de ter barra de rolagem, e a só a div passa a ter */
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="2">3</td>
-            <td>4</td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>6</td>
-
-            <td>7</td>
-        </tr>
-
-        <tr>
-            <td colspan="3">8</td>
-            <td>9</td>
-        </tr>
-
-        <tr>
-            <td rowspan="2">10</td>
-            <td colspan="2">11</td>
-            <td>12</td>
-        </tr>
-
-        <tr>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-        </tr>
-    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, doloremque soluta? Vel consectetur a quaerat porro? Aliquid iste ut pariatur eligendi neque eum reprehenderit, tempora tenetur ea amet, placeat aliquam!
+    </p>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="coluna1">
+                <col class="coluna2" span="2">
+                <col class="coluna3">
+            </colgroup>
+            <!-- para personalizar uma linha, basta mexer no <tr>, mas para mexer em uma coluna, precisamos fazer dessa forma
+            dessa forma, vai ser criado uma class para cada coluna, na ordem
+            * ao colocar span, os estilos se aplicam para as duas ou mais colunas
+         -->
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td> <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

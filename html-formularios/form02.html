@@ -13,9 +13,13 @@
             <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Digite aqui o usuário" autocomplete="username">
         </p>
 <!-- 
-        required: Determina que o campo é necessário ser preenchido antes de enviar
-        minlength: Determina o número mínimo de caracteres
-        maxlength: Determina o número máximo de caracteres
+            required: Determina que o campo é necessário ser preenchido antes de enviar
+            minlength: Determina o número mínimo de caracteres
+            maxlength: Determina o número máximo de caracteres
+            size: No próprio html, determina o tamanho da caixa de texto
+            placeholder: Cria uma “dica” na caixa de texto (que some quando usuário começar a digitar)
+            autocomplete: Serve para o navegador entender o que é a caixa de texto. Por exemplo, se o navegador já tem salvo o nome da pessoa, e o autocomplete estiver com “name”, ele vai saber que nesse campo, é para sugerir o nome.
+                ps.: Dentro da tag <form>, o autocomplete precisa estar ligado. 
  -->
         <p>
             <label for="isen">Senha: *</label>

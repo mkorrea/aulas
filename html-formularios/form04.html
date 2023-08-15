@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulario
+    </h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p><label for="xnome">Nome:</label>
+                <input type="text" name="nome" id="xnome"></p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="mail" id="email">
+            </p>
+            <p>
+                <label for="xtel">Telefone:</label>
+                <input type="tel" name="tel" id="xtel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(_ _) _ _ _ _ _ - _ _ _ _">
+            </p>
+            <p>
+                <input type="submit" value="Mandar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

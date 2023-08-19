@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+img#celular { display: none; }
+img#tablet { display: none; }
+img#pc { display: none; }
+img#tv { display: none; }
+img#imprimir { display: block; }
+
+h1 {
+    color: black;
+    text-shadow: none;
+    font-family: 'Courier New', Courier, monospace;
+}

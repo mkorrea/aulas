@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* 
+    O Typical Device Breakpoint é de:
+        - Pequenas telas: até 600px
+        - Celular: de 600px até 768px
+        - Tablet: de 768px até 992px
+        - Monitor: de 992px até 1200px
+        - Grandes telas: acima de 1200px 
+*/
+
+@media screen and (min-width: 768px) {
+    
+    #burguer {
+        display: none;
+    }
+    
+    menu { 
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+        border: none;
+        width: 100px;
+    }
+    menu a {
+    }
+}
